@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Homepage() {
   return (
-    <main>
+    <div>
       <div className="mt-80 px-5 max-w-[800px] mx-auto">
         <div>
           <p>
@@ -691,6 +691,6 @@ export default function Homepage() {
           </a>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
