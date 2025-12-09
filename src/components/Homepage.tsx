@@ -135,7 +135,7 @@ export default function Homepage() {
               your bookmarks, providing you with a better browsing experience.
             </p>
 
-            <ul className="flex flex-wrap gap-x-5">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1">
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
                 <svg
                   viewBox="0 -1 34 34"
@@ -396,7 +396,7 @@ export default function Homepage() {
               gameplay combines puzzle-solving, exploration, and narrative
               elements and something else.
             </p>
-            <ul className="flex flex-wrap gap-x-5">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1">
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
                 <svg
                   viewBox="0 -1 34 34"
@@ -521,7 +521,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>{" "}
-      <div className=" mt-20 max-w-xl mx-auto mb-7 flex gap-1.5 items-center justify-end">
+      <div className="mt-20 max-w-xl mx-auto mb-7 flex gap-1.5 items-center justify-end px-5">
         <a href="https://www.linkedin.com/in/ibrahim-harchiche-415a51259/">
           <svg
             viewBox="0 0 24 24"
