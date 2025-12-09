@@ -1,23 +1,51 @@
-export default function HomePageLanding() {
+export default function HomePageLanding({ login }) {
+  const backgroundHeight = 675;
+  const top = String(backgroundHeight - 120);
   return (
-    <div className="absolute top-0 left-0 w-full">
-      <svg
-        className="bg-[#c5d1fc] w-full min-w-[1700px]"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        height="550"
-        width="1700"
-        viewBox="0 0 1700 550"
+    <div
+      id="layer"
+      className={`h-full w-full absolute ${
+        login ? "top-[50%] translate-y-[-50%]" : ""
+      }`}
+    >
+      {login && (
+        <div
+          className={`absolute w-full h-30 top-[-15px] z-1`}
+          style={{
+            background: "linear-gradient(180deg, white 50%, transparent)",
+          }}
+        ></div>
+      )}
+
+      <div
+        className={`max-w-[1241px] h-full overflow-hidden mx-auto relative `}
+        style={{
+          mask: "linear-gradient(90deg, transparent 0%, white 56%, transparent)",
+        }}
       >
-        <path
-          className="fill-[#b1c0f6]"
-          d="M 75 550 L 75 410 C 100 347 275 310 323 400 L 323 550 M 285 550 L 284 365 C 332 283 523 305 530 425 L 530 550 M 475 550 L 475 357 C 495 312 645 260 704 367 L 704 550 M 1200 550 L 1200 317 C 1250 250 1430 253 1480 320 L 1480 550 M 1470 550 L 1470 320 C 1470 200 1550 130 1700 130 L 1700 550"
-        ></path>
-        <path
-          className="fill-white"
-          d="M 0 560 L 0 400 Q 64 395 120 440 Q 350 357 570 440 C 650 350 877 315 1000 380 C 1080 304 1307 303 1400 350 C 1500 300 1600 300 1700 350 L 1710 560 z"
-        ></path>
-      </svg>
+        <div id="vertical" className="w-full h-full">
+          {Array(100)
+            .fill(0)
+            .map((_, index) => (
+              <div
+                key={index + "d"}
+                className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
+                style={{ left: 80 * (index + 1) + "px" }}
+              ></div>
+            ))}
+        </div>
+        <div id="horizontal">
+          {Array(100)
+            .fill(0)
+            .map((_, index) => (
+              <div
+                key={index + "d"}
+                className={`block h-[1.5px] w-full bg-[#e9e9e9] absolute`}
+                style={{ top: 80 * (index + 1) + "px" }}
+              ></div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }

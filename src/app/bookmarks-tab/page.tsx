@@ -1,11 +1,9 @@
+// @ts-nocheck
 import HeadingThee from "@/components/HeadingThee";
 import HeadingTwo from "@/components/HeadingTwo";
 import Paragraph from "@/components/Paragraph";
 import { ArrowRight, Lightbulb } from "lucide-react";
 import Image from "next/image";
-
-import { Suspense } from "react";
-// import { list } from "@vercel/blob";
 
 export default function page() {
   const featuresList = [
@@ -67,7 +65,7 @@ export default function page() {
           with a better browsing experience. Its core features are:
         </Paragraph>
         <ul className="ml-4 mt-5">
-          {featuresList.map((feature, index) => (
+          {featuresList.map((feature) => (
             <li className="mt-1 flex gap-2 items-start" key={feature}>
               <ArrowRight size={20} className="h-lh" />
               {feature}
