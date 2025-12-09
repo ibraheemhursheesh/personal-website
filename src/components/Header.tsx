@@ -502,55 +502,110 @@ export default function Header() {
             Ibrahim Harchiche
           </h1>
         </div>
-        <div className="text-zinc-600 px-10  max-w-prose mx-auto mt-1.5 text-center">
+        <div className="text-zinc-600 p-2 max-w-[65ch] mx-auto mt-1.5 text-center relative border-x-16 border-transparent">
           {" "}
-          <p className="">
-            I’m a self-taught front-end developer, based in Morocco, I enjoy
-            building pixel-perfect web experiences. Throughout the last two
-            years, I’ve been honing my front-end development skills and building
-            a strong foundation in web technologies. I use React, Next.js,
-            Typescript, and Tailwind as my core development stack.
-          </p>
-          <p className="mt-4">
-            I did some technical writing back in the past on{" "}
-            <a
-              className="underline underline-offset-4"
-              href="https://eqraatech.com/author/ibrahimharchiche/"
-            >
-              eqraatech.com
-            </a>
-            , an arabic platform that aims to enrich technical content and
-            encourage arabians to learn programming in their native language.
-          </p>
-          <p className="mt-4">
-            I&apos;m currently seeking a front-end developer role where I can
-            contribute to impactful projects, help a company acheive their
-            goals, and take on new challenges.
-          </p>
-          <p className="mt-4">
-            You can contact me on{" "}
-            <a
-              className="underline underline-offset-4"
-              href="https://www.linkedin.com/in/ibrahim-harchiche-415a51259/"
-            >
-              LinkedIn
-            </a>{" "}
-            or{" "}
-            <a
-              className="underline underline-offset-4"
-              href="https://x.com/ibrahim_hrsh"
-            >
-              Twitter
-            </a>
-            {/* , I also do freelancing on{" "}
+          {/* <span className="bg-white absolute inset-0"></span>
+          <span
+            className="absolute inset-0 border border-dashed border-zinc-600/60"
+            data--h-bstatus="0OBSERVED"
+          ></span>
+          <svg
+            width={5}
+            height={5}
+            viewBox="0 0 5 5"
+            className="absolute top-[-2px] left-[-2px] fill-zinc-600"
+            data--h-bstatus="0OBSERVED"
+          >
+            <path
+              d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+              data--h-bstatus="0OBSERVED"
+            />
+          </svg>
+          <svg
+            width={5}
+            height={5}
+            viewBox="0 0 5 5"
+            className="absolute top-[-2px] right-[-2px] fill-zinc-600"
+            data--h-bstatus="0OBSERVED"
+          >
+            <path
+              d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+              data--h-bstatus="0OBSERVED"
+            />
+          </svg>
+          <svg
+            width={5}
+            height={5}
+            viewBox="0 0 5 5"
+            className="absolute bottom-[-2px] left-[-2px] fill-zinc-600"
+            data--h-bstatus="0OBSERVED"
+          >
+            <path
+              d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+              data--h-bstatus="0OBSERVED"
+            />
+          </svg>
+          <svg
+            width={5}
+            height={5}
+            viewBox="0 0 5 5"
+            className="absolute right-[-2px] bottom-[-2px] fill-zinc-600"
+            data--h-bstatus="0OBSERVED"
+          >
+            <path
+              d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+              data--h-bstatus="0OBSERVED"
+            />
+          </svg> */}
+          <div className="relative">
+            <p className="">
+              I’m a self-taught front-end developer, based in Morocco, I enjoy
+              building pixel-perfect web experiences. Throughout the last two
+              years, I’ve been honing my front-end development skills and
+              building a strong foundation in web technologies. I use React,
+              Next.js, Typescript, and Tailwind as my core development stack.
+            </p>
+            <p className="mt-4">
+              I did some technical writing back in the past on{" "}
+              <a
+                className="underline underline-offset-4"
+                href="https://eqraatech.com/author/ibrahimharchiche/"
+              >
+                eqraatech.com
+              </a>
+              , an arabic platform that aims to enrich technical content and
+              encourage arabians to learn programming in their native language.
+            </p>
+            <p className="mt-4">
+              I&apos;m currently seeking a front-end developer role where I can
+              contribute to impactful projects, help a company acheive their
+              goals, and take on new challenges.
+            </p>
+            <p className="mt-4">
+              You can contact me on{" "}
+              <a
+                className="underline underline-offset-4"
+                href="https://www.linkedin.com/in/ibrahim-harchiche-415a51259/"
+              >
+                LinkedIn
+              </a>{" "}
+              or{" "}
+              <a
+                className="underline underline-offset-4"
+                href="https://x.com/ibrahim_hrsh"
+              >
+                Twitter
+              </a>
+              {/* , I also do freelancing on{" "}
             <a
               className="underline underline-offset-4"
               href="https://www.upwork.com/freelancers/~014ce4d152e17b2b6a"
             >
               Upwork
             </a> */}
-            .
-          </p>
+              .
+            </p>{" "}
+          </div>
         </div>{" "}
       </div>
     </div>
