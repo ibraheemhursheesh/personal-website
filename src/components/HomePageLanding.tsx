@@ -1,22 +1,8 @@
-export default function HomePageLanding({ login }) {
+export default function HomePageLanding() {
   const backgroundHeight = 675;
   const top = String(backgroundHeight - 120);
   return (
-    <div
-      id="layer"
-      className={`h-full w-full absolute ${
-        login ? "top-[50%] translate-y-[-50%]" : ""
-      }`}
-    >
-      {login && (
-        <div
-          className={`absolute w-full h-30 top-[-15px] z-1`}
-          style={{
-            background: "linear-gradient(180deg, white 50%, transparent)",
-          }}
-        ></div>
-      )}
-
+    <div id="layer" className={`h-full w-full absolute`}>
       <div
         className={`max-w-[1241px] h-full overflow-hidden mx-auto relative `}
         style={{

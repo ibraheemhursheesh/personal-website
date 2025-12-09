@@ -1,4 +1,3 @@
-// @ts-nocheck
 import HomePageLanding from "./HomePageLanding";
 
 export default function Header() {

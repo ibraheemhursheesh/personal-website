@@ -1,12 +1,6 @@
-// @ts-nocheck
 import { Cuboid } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
-import { Fira_Code } from "next/font/google";
-
-const fira_Code = Fira_Code();
-const inter = Inter();
 
 export default function Homepage() {
   return (

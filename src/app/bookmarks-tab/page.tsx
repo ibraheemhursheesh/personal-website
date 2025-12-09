@@ -1,4 +1,3 @@
-// @ts-nocheck
 import HeadingThee from "@/components/HeadingThee";
 import HeadingTwo from "@/components/HeadingTwo";
 import Paragraph from "@/components/Paragraph";
