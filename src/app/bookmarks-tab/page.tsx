@@ -16,7 +16,6 @@ export default function page() {
       <header className="mt-25 w-fit  mx-6 md:mx-auto  lg:ml-35 lg:mr-8">
         <h1 className="text-4xl font-medium ">Bookmarks Tab</h1>
         <p className="max-w-[600px] mt-2">
-          {" "}
           A chrome extension that takes your bookmarks and displays them in a
           clean, cosy interface on your browser new tab.
         </p>
@@ -77,8 +76,8 @@ export default function page() {
           <p>
             This article aims to provide details on the extension implementation
             process, the kind of details that a screenshot and paragraph cannot
-            usually summerize, whether you're an early-career or seasoned
-            developer, I believe that you'll find something useful in this
+            usually summerize, whether you&apos;re an early-career or seasoned
+            developer, I believe that you&apos;ll find something useful in this
             article.
           </p>
         </div>
@@ -86,7 +85,7 @@ export default function page() {
         <HeadingThee>Doing UI/UX</HeadingThee>
         <Paragraph>
           Since Bookmarks Tab aims to improve the user experience with
-          bookmarks, my work wasn't exclusively development, I had to step
+          bookmarks, my work wasn&apos;t exclusively development, I had to step
           outside my wheelhouse and handle UI/UX design, and to be honest,
           design decisions can be as challenging as technical ones, a single
           feature can be designed in multiple ways, take the folder navigation
@@ -100,16 +99,16 @@ export default function page() {
         <Paragraph>
           I had to choose between the design shown in the video and using a
           shared element to display bookmarks inside a folder. I went for the
-          shared element solution at first as it's similar to mobile
+          shared element solution at first as it&apos;s similar to mobile
           experiences, but it was a tricky design, especially for nested folder
           navigation.
         </Paragraph>
         <HeadingThee>Why Bookmarks Tab?</HeadingThee>
         <Paragraph>
-          I'm a big fan of mobile interfaces, if I wasn't doing web, I would've
-          been a mobile developer, I do really want to do some React Native in
-          the future. The thing that attracts me most about mobile devices is
-          the small touchable screen.
+          I&apos;m a big fan of mobile interfaces, if I wasn&apos;t doing web, I
+          would&apos;ve been a mobile developer, I do really want to do some
+          React Native in the future. The thing that attracts me most about
+          mobile devices is the small touchable screen.
         </Paragraph>
 
         <Image
@@ -122,8 +121,9 @@ export default function page() {
         <Paragraph>
           touch gestures allow for a high-level of interactivity, and small
           handheld screens are perfect for smooth animations and delightful
-          designs, consider something like drawer components, it's much easier
-          to interact with a drawer using your finger than a mouse or trackpad.
+          designs, consider something like drawer components, it&apos;s much
+          easier to interact with a drawer using your finger than a mouse or
+          trackpad.
         </Paragraph>
         <Paragraph>
           I built this extension as an attempt to bring some of that friendly
@@ -132,11 +132,11 @@ export default function page() {
         </Paragraph>
         <HeadingTwo>A word on Extensions Development.</HeadingTwo>
         <Paragraph>
-          If you're not familiar with Chrome extension development, extensions
-          are built using standard web technologies (HTML, CSS, and JavaScript).
-          This means you can use any framework or library built on top of these
-          three languages. In this project, I'm using React, TypeScript,
-          Tailwind, and Shadcn. I'm also using{" "}
+          If you&apos;re not familiar with Chrome extension development,
+          extensions are built using standard web technologies (HTML, CSS, and
+          JavaScript). This means you can use any framework or library built on
+          top of these three languages. In this project, I&apos;m using React,
+          TypeScript, Tailwind, and Shadcn. I&apos;m also using
           <a className="underline underline-offset-2" href="https://crxjs.dev/">
             CRXJS
           </a>
@@ -155,20 +155,21 @@ export default function page() {
             chrome.bookmarks
           </code>
           ), I use this API to read, search, and manage user bookmarks, I also
-          use an extension-specific storage API, it's similar to web storage API
+          use an extension-specific storage API, it&apos;s similar to web
+          storage API
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
             localStorage
           </code>
-          , except that it can get unlimited storage quota by requesting the{" "}
+          , except that it can get unlimited storage quota by requesting the
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
-            "unlimitedStorage"
-          </code>{" "}
+            &quot;unlimitedStorage&quot;
+          </code>
           permission.
         </Paragraph>
         <HeadingTwo>Drop and Drop</HeadingTwo>
@@ -181,7 +182,7 @@ export default function page() {
           The drag and drop UI was the most complex part in this project, bugs
           kept popping out of nowhere, I suddenly found myself dealing with
           collision detection algorithms, pointer events, layout shifts,
-          scrollable containers, and a nightmare of{" "}
+          scrollable containers, and a nightmare of
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
@@ -199,24 +200,25 @@ export default function page() {
         />
         <Paragraph>
           One of the trickiest parts about this drag and drop UI is handling
-          user scroll. I've ran into so many edge cases, like the user scrolling
-          down and then dragging and an item upward, or moving from a
+          user scroll. I&apos;ve ran into so many edge cases, like the user
+          scrolling down and then dragging and an item upward, or moving from a
           non-scrollable to a scrollable container, absolutely positioned
           element being removed from the normal document flow, and so on. I
-          tried to be as defensive as possible with this, though I can't really
-          guarantee that some silly weird bug isn't hiding behind an edge case I
-          didn't consider.
+          tried to be as defensive as possible with this, though I can&apos;t
+          really guarantee that some silly weird bug isn&apos;t hiding behind an
+          edge case I didn&apos;t consider.
         </Paragraph>
         <Paragraph>
-          Believe it or not, I didn't use a library for this, I hand-crafted the
-          feature, the library that would best suit this feature is{" "}
+          Believe it or not, I didn&apos;t use a library for this, I
+          hand-crafted the feature, the library that would best suit this
+          feature is
           <a
             className="underline underline-offset-2"
             href="https://dndkit.com/"
           >
             dndkit
           </a>
-          , dndkit is an awesome tool, it doesn't use the infamously
+          , dndkit is an awesome tool, it doesn&apos;t use the infamously
           inconsistent HTML5 drag-and-drop API, it builds its own one based on
           pointer events, handles collision detection, sorting, motion
           restriction, it supports Mouse, Touch, and Keyboard drop and drop.
@@ -224,7 +226,7 @@ export default function page() {
         <HeadingThee>The Problem with Dndkit</HeadingThee>
         <Paragraph>
           However, this powerful API makes the ease of use of the library
-          challenging, which is exactly why I couldn't incorporate it in my
+          challenging, which is exactly why I couldn&apos;t incorporate it in my
           project. After reading almost the entire docs, experimenting with the
           library capabilities, I concluded that the only way for me to make use
           of dndkit is to head to the github repo and read the underlaying
@@ -237,35 +239,36 @@ export default function page() {
         <video className="rounded-md mt-5" src="/dialogs.mp4" controls={true} />
         <Paragraph>
           My extension is full of floating UIs (the background image carousel,
-          edit bookmark dialog, search), despite that, I don't use any of Shadcn
-          floating components (context menu, dilaog, etc), I use the native html{" "}
+          edit bookmark dialog, search), despite that, I don&apos;t use any of
+          Shadcn floating components (context menu, dilaog, etc), I use the
+          native html
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
             dialog
-          </code>{" "}
+          </code>
           element instead, I learned about this element just recently and wanted
           to experiment with it, and you trust me,you really want to give a try.
         </Paragraph>
         <Paragraph>
-          The{" "}
+          The
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
             dialog
-          </code>{" "}
+          </code>
           element manages focus trapping, provides you with a backdrop, handles
           both the Escape key and light dismiss, and supports form dialog,
-          moreover,{" "}
+          moreover,
           <a
             className="underline underline-offset-2"
             href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#browser_compatibility"
           >
             its baseline state
-          </a>{" "}
-          says that it's widely available across major browsers.
+          </a>
+          says that it&apos;s widely available across major browsers.
         </Paragraph>
         <Image
           className="rounded-lg max-w-[700px] mt-5 w-full"
@@ -277,42 +280,42 @@ export default function page() {
         <Paragraph>
           Despite all of these advantages, UI libraries like ShadcnUI and
           RadixUI choose to throw away this built-in, vendor-tested solution
-          that browsers offer for free, and create their own diloag using{" "}
+          that browsers offer for free, and create their own diloag using
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
-            div role="dialog"
+            div role=&quot;dialog&quot;
           </code>
-          , you can already guess how much Javascript you'll need to ship to the
-          user in order to make a meaningless{" "}
+          , you can already guess how much Javascript you&apos;ll need to ship
+          to the user in order to make a meaningless
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
             div
-          </code>{" "}
-          act like a{" "}
+          </code>
+          act like a
           <code
             style={{ fontFamily: "inherit" }}
             className="bg-zinc-200/70 py-0.5 px-1 text-blue-800 rounded text-sm"
           >
             dialog
           </code>
-          , and guess what? it doesn't always get to fully behave like a true
-          dialog.
+          , and guess what? it doesn&apos;t always get to fully behave like a
+          true dialog.
         </Paragraph>
         <HeadingTwo>Extension Current State</HeadingTwo>
         <Paragraph>
-          Bookmarks Tab is currently in its early stage, I've tried to implement
-          as many key features as possible, though it still lacks a few things,
-          such as changing folder colors, adding user settings, integrating
-          Google Search, and supporting keyboard navigation.
+          Bookmarks Tab is currently in its early stage, I&apos;ve tried to
+          implement as many key features as possible, though it still lacks a
+          few things, such as changing folder colors, adding user settings,
+          integrating Google Search, and supporting keyboard navigation.
         </Paragraph>
         <Paragraph>
-          I'll do my best to add these features as soon as possible, since I use
-          this extension myself, but I'm quite busy these days, so I can't
-          promise they'll be implemented quickly.
+          I&apos;ll do my best to add these features as soon as possible, since
+          I use this extension myself, but I&apos;m quite busy these days, so I
+          can&apos;t promise they&apos;ll be implemented quickly.
         </Paragraph>
       </main>
       <div className="mt-50"></div>

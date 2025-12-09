@@ -1,6 +1,5 @@
 export default function HomePageLanding() {
-  const backgroundHeight = 675;
-  const top = String(backgroundHeight - 120);
+
   return (
     <div id="layer" className={`h-full w-full absolute`}>
       <div

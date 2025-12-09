@@ -9,7 +9,7 @@ export default function Homepage() {
         {/* heading */}
         <div className="max-w-xl mx-auto text-xl font-semibold md:text-2xl flex gap-4 items-center">
           <Cuboid />
-          <p>The best projects I've worked on</p>
+          <p>The best projects I&apos;ve worked on</p>
         </div>
         {/* cards */}
         <div id="cards" className="max-w-[37.5rem] mt-5 mx-auto ">

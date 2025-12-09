@@ -1,5 +1,3 @@
-import HomePageLanding from "./HomePageLanding";
-
 export default function Header() {
   return (
     <div className="relative">
@@ -500,7 +498,6 @@ export default function Header() {
 
       <div className="relative pt-7.5">
         <div className="w-fit mx-auto text-center px-5">
-          {/* <h1 className="text-4xl font-medium">I'm Ibrahim</h1> */}
           <h1 className="text-[3rem] leading-18 max-w-3xl mx-auto font-semibold text-center">
             Ibrahim Harchiche
           </h1>
@@ -526,7 +523,7 @@ export default function Header() {
             encourage arabians to learn programming in their native language.
           </p>
           <p className="mt-4">
-            I'm currently seeking a front-end developer role where I can
+            I&apos;m currently seeking a front-end developer role where I can
             contribute to impactful projects, help a company acheive their
             goals, and take on new challenges.
           </p>
