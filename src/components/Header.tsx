@@ -498,7 +498,7 @@ export default function Header() {
 
       <div className="relative pt-7.5">
         <div className="w-fit mx-auto text-center px-5">
-          <h1 className="text-[3rem] leading-18 max-w-3xl mx-auto font-semibold text-center">
+          <h1 className="text-[2.5rem] sm:text-[3rem] leading-18 max-w-3xl mx-auto font-semibold text-center">
             Ibrahim Harchiche
           </h1>
         </div>
