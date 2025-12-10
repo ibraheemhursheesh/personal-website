@@ -558,14 +558,14 @@ export default function Header() {
             />
           </svg> */}
           <div className="relative">
-            <p style={{ filter: "drop-shadow(0 0 2px #eee)" }} className="">
+            <p className="">
               I’m a self-taught front-end developer, based in Morocco, I enjoy
               building pixel-perfect web experiences. Throughout the last two
               years, I’ve been honing my front-end development skills and
               building a strong foundation in web technologies. I use React,
               Next.js, Typescript, and Tailwind as my core development stack.
             </p>
-            <p style={{ filter: "drop-shadow(0 0 2px #eee)" }} className="mt-4">
+            <p className="mt-4">
               I did some technical writing back in the past on{" "}
               <a
                 className="underline underline-offset-4"
@@ -576,12 +576,12 @@ export default function Header() {
               , an arabic platform that aims to enrich technical content and
               encourage arabians to learn programming in their native language.
             </p>
-            <p style={{ filter: "drop-shadow(0 0 2px #eee)" }} className="mt-4">
+            <p className="mt-4">
               I&apos;m currently seeking a front-end developer role where I can
               contribute to impactful projects, help a company acheive their
               goals, and take on new challenges.
             </p>
-            <p style={{ filter: "drop-shadow(0 0 2px #eee)" }} className="mt-4">
+            <p className="mt-4">
               You can contact me on{" "}
               <a
                 className="underline underline-offset-4"
