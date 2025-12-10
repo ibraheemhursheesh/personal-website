@@ -3,5 +3,5 @@ export default function HeadingTwo({
 }: {
   children: React.ReactNode;
 }) {
-  return <h2 className="text-xl font-medium mt-10">{children}</h2>;
+  return <h2 className="text-xl font-semibold mt-10">{children}</h2>;
 }

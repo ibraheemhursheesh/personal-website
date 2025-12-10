@@ -21,10 +21,10 @@ export default function page() {
         </p>
         <p className="text-gray-600 mt-2">On October 9th, 2025.</p>
       </header>
-      <main className="mt-70 max-w-[700px] mx-6 md:mx-auto  lg:ml-35 lg:mr-8">
+      <main className="max-w-[500px] mx-6 md:mx-auto  lg:ml-35 lg:mr-8">
         {/* <div className="flex gap-3 "> */}
-        <div className="flex gap-2 items-center bg-zinc-300/50 text-zinc-900 max-w-[700px] justify-center mt-5 p-2 text-sm mx-auto rounded-sm">
-          {/* <a href=""></a> */}
+        {/* <div className="flex gap-2 items-center bg-zinc-300/50 text-zinc-900 max-w-[700px] justify-center mt-5 p-2 text-sm mx-auto rounded-sm">
+       
           <Image
             className="rounded-lg size-8"
             src="/chrome.svg.png"
@@ -33,14 +33,14 @@ export default function page() {
             alt="bookmarks tab image"
           />
           Get The Exntension
-        </div>
+        </div> */}
 
         {/* <div className="flex gap-2 items-center bg-zinc-300/50 text-zinc-900 max-w-[700px] justify-center mt-5 p-2 text-sm mx-auto rounded-sm">
          
             Source Code
           </div> */}
         {/* </div> */}
-        <HeadingTwo>Introducing Bookmarks Tab</HeadingTwo>
+        <HeadingTwo>Introduction</HeadingTwo>
 
         {/* <Image
           className="rounded-lg max-w-[700px] mt-5 w-full"

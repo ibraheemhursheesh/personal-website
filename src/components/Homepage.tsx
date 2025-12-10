@@ -171,7 +171,7 @@ export default function Homepage() {
                     />{" "}
                   </g>
                 </svg>
-                <span>React</span>
+                <span className="block">React</span>
               </li>
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
                 <svg
@@ -196,7 +196,7 @@ export default function Homepage() {
                   </g>
                 </svg>
 
-                <span>Tailwind</span>
+                <span className="block">Tailwind</span>
               </li>
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
                 <svg
@@ -217,7 +217,7 @@ export default function Homepage() {
                   </g>
                 </svg>
 
-                <span>Next.js</span>
+                <span className="block">Next.js</span>
               </li>
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
                 <svg
@@ -522,7 +522,7 @@ export default function Homepage() {
         </div>
       </div>{" "}
       <div className="max-w-xl mx-auto">
-        <div className="mt-20 w-fit mb-7 flex  items-center mx-auto sm:mr-0 relative">
+        <div className="mt-20 w-min  one:w-[237px]  three:w-fit mb-7 flex flex-wrap justify-center px-3 py-1.5 items-center mx-auto relative gap-x-6 gap-y-3 sm:gap-3 ">
           {" "}
           <span className="bg-white absolute inset-0"></span>
           <span
@@ -579,32 +579,75 @@ export default function Homepage() {
           </svg>
           {/* no svgs */}
           <a
-            className="size-12 flex items-center justify-center mx-3 sm:mx-0.75 not-last:after:h-[112%] after:border-l after:border-dashed after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
+            className="flex items-center justify-center gap-2 not-last:after:h-[112%] after:border-l after:border-none after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
             href="https://www.linkedin.com/in/ibrahim-harchiche-415a51259/"
           >
             <svg
-              viewBox="0 0 24 24"
-              className="size-12"
-              fill="none"
+              className="size-7"
+              viewBox="0 0 20 20"
+              version="1.1"
               xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+              data--h-bstatus="0OBSERVED"
             >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_bgCarrier"
+                strokeWidth={0}
+                data--h-bstatus="0OBSERVED"
+              />
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
+                data--h-bstatus="0OBSERVED"
+              />
+              <g id="SVGRepo_iconCarrier" data--h-bstatus="0OBSERVED">
                 {" "}
-                <path
-                  d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"
-                  fill="#000000"
-                ></path>{" "}
+                <title data--h-bstatus="0OBSERVED">
+                  linkedin [#000000]
+                </title>{" "}
+                <desc data--h-bstatus="0OBSERVED">Created with Sketch.</desc>{" "}
+                <defs data--h-bstatus="0OBSERVED"> </defs>{" "}
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  strokeWidth={1}
+                  fill="none"
+                  fillRule="evenodd"
+                  data--h-bstatus="0OBSERVED"
+                >
+                  {" "}
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-180.000000, -7479.000000)"
+                    fill="#000000"
+                    data--h-bstatus="0OBSERVED"
+                  >
+                    {" "}
+                    <g
+                      id="icons"
+                      transform="translate(56.000000, 160.000000)"
+                      data--h-bstatus="0OBSERVED"
+                    >
+                      {" "}
+                      <path
+                        d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                        id="linkedin-[#000000]"
+                        data--h-bstatus="0OBSERVED"
+                      >
+                        {" "}
+                      </path>{" "}
+                    </g>{" "}
+                  </g>{" "}
+                </g>{" "}
               </g>
             </svg>
+
+            <span className="block">LinkedIn</span>
           </a>
           <a
-            className="size-12 flex items-center justify-center mx-3 sm:mx-0.75 not-last:after:h-[112%] after:border-l after:border-dashed after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
+            className="flex items-center justify-center gap-2 not-last:after:h-[112%] after:border-l after:border-none after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
             href="https://github.com/ibraheemhursheesh"
           >
             <svg
@@ -631,9 +674,10 @@ export default function Homepage() {
                 ></path>{" "}
               </g>
             </svg>
+            Github
           </a>
           <a
-            className="size-12 flex items-center justify-center mx-3 sm:mx-0.75 not-last:after:h-[112%] after:border-l after:border-dashed after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
+            className="flex items-center justify-center gap-2 not-last:after:h-[112%] after:border-l after:border-none after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
             href="https://x.com/ibrahim_hrsh"
           >
             <svg
@@ -647,9 +691,10 @@ export default function Homepage() {
             >
               <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
             </svg>
+            Twitter
           </a>
           <a
-            className="size-12 flex items-center justify-center mx-3 sm:mx-0.75 not-last:after:h-[112%] after:border-l after:border-dashed after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
+            className="flex items-center justify-center gap-2 not-last:after:h-[112%] after:border-l after:border-none after:border-zinc-600/60 after:absolute relative  after:-right-3 sm:after:-right-0.75"
             href="https://www.upwork.com/freelancers/~014ce4d152e17b2b6a"
           >
             <svg
@@ -670,6 +715,7 @@ export default function Homepage() {
                 <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"></path>
               </g>
             </svg>
+            Upwork
           </a>
         </div>
       </div>
