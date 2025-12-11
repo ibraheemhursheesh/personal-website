@@ -1,4 +1,12 @@
+"use client";
+import { usePathname } from "next/navigation";
+
 export default function HomePageLanding() {
+  const pathname = usePathname();
+
+  if (pathname !== "/") {
+    return null;
+  }
 
   return (
     <div id="layer" className={`h-full w-full absolute`}>

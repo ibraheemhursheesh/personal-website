@@ -513,7 +513,7 @@ export default function Homepage() {
               </li>
             </ul>
             <Link
-              href="/bookmarks-tab"
+              href="/"
               className="text-sm bg-zinc-800 text-white py-1.5 w-[10rem] ml-auto mr-5 text-center rounded-full "
             >
               Learn more

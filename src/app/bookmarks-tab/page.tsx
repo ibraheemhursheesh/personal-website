@@ -13,6 +13,11 @@ export default function page() {
   ];
   return (
     <div>
+      {" "}
+      <div className="bg-red-50 text-center p-5">
+        this page is still under developemnt, but the content is almost done
+        written, so you can go ahead and read.
+      </div>
       <header className="mt-25 w-fit  mx-6 md:mx-auto  lg:ml-35 lg:mr-8">
         <h1 className="text-4xl font-medium ">Bookmarks Tab</h1>
         <p className="max-w-[600px] mt-2">
