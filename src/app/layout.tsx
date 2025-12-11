@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className + " overflow-x-hidden relative"}>
+      <body className={GeistSans.className + " overflow-x-hidden relative "}>
         {/* <div className="relative bg-white p-2  text-center text-sm text-black">
           <p className="max-w-xl mx-auto">
             This portfolio site is still under development, if anything looks

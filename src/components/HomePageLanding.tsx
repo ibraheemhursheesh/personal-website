@@ -9,7 +9,7 @@ export default function HomePageLanding() {
         }}
       >
         <div id="vertical" className="w-full h-full">
-          {Array(100)
+          {/* {Array(100)
             .fill(0)
             .map((_, index) => (
               <div
@@ -17,7 +17,31 @@ export default function HomePageLanding() {
                 className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
                 style={{ left: 80 * (index + 1) + "px" }}
               ></div>
-            ))}
+            ))} */}
+          <div
+            className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
+            style={{ left: "15%" }}
+          ></div>
+          <div
+            className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
+            style={{ left: "calc(15% + 20px)" }}
+          ></div>
+          {/* {Array(100)
+            .fill(0)
+            .map((_, index) => (
+              <div
+                className={`block h-[1px] w-6.25 absolute bg-[#cccccc] -rotate-33`}
+                style={{ left: "14.7%", top: 20 * (index + 1) + "px" }}
+              ></div>
+            ))} */}
+          <div
+            className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
+            style={{ right: "15%" }}
+          ></div>
+          <div
+            className={`block h-full w-[1.5px] bg-[#e9e9e9] absolute`}
+            style={{ right: "calc(15% + 20px)" }}
+          ></div>
         </div>
         <div id="horizontal">
           {Array(100)
