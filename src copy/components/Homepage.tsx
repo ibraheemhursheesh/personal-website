@@ -257,13 +257,74 @@ export default function Homepage() {
             >
               Learn more
             </Link>
+
+            {/* <Link
+              href="/bookmarks-tab"
+              className="w-[10rem] ml-auto mr-5 text-center relative px-1.5 py-1 text-sm"
+            >
+              <span className="absolute inset-0 border border-dashed border-zinc-300/60 bg-zinc-400/10"></span>
+              Learn more
+              <svg
+                width={5}
+                height={5}
+                viewBox="0 0 5 5"
+                className="absolute top-[-2px] left-[-2px] fill-zinc-300"
+                data--h-bstatus="0OBSERVED"
+              >
+                <path
+                  d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+                  data--h-bstatus="0OBSERVED"
+                />
+              </svg>
+              <svg
+                width={5}
+                height={5}
+                viewBox="0 0 5 5"
+                className="absolute top-[-2px] right-[-2px] fill-zinc-300"
+                data--h-bstatus="0OBSERVED"
+              >
+                <path
+                  d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+                  data--h-bstatus="0OBSERVED"
+                />
+              </svg>
+              <svg
+                width={5}
+                height={5}
+                viewBox="0 0 5 5"
+                className="absolute bottom-[-2px] left-[-2px] fill-zinc-300"
+                data--h-bstatus="0OBSERVED"
+              >
+                <path
+                  d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+                  data--h-bstatus="0OBSERVED"
+                />
+              </svg>
+              <svg
+                width={5}
+                height={5}
+                viewBox="0 0 5 5"
+                className="absolute right-[-2px] bottom-[-2px] fill-zinc-300"
+                data--h-bstatus="0OBSERVED"
+              >
+                <path
+                  d="M2 0h1v2h2v1h-2v2h-1v-2h-2v-1h2z"
+                  data--h-bstatus="0OBSERVED"
+                />
+              </svg>
+            </Link> */}
+            {/* <div>
+              <div>
+                <span>React</span>
+              </div>
+            </div> */}
           </div>
           <div
             id="card"
             className="mt-3 bg-white border border-gray-200 p-4 rounded-xl flex flex-col gap-4"
           >
             <div className="flex w-full items-center gap-4">
-              <Image alt="app" src="/box2.avif" width={56} height={56} />
+              <Image alt="app" src="/rabbit.png" width={56} height={56} />
               <div className="flex grow items-center justify-between">
                 <div className="flex flex-col gap-0.5">
                   <h3 className="text-sm font-medium">Unpacked</h3>
@@ -272,11 +333,11 @@ export default function Homepage() {
                   </span>
                 </div>
                 <Link
-                  href="https://harchiche-course-patform.vercel.app"
-                  className="min-w-[4rem] w-fit ml-auto mr-5 text-center relative px-1.5 py-1 text-sm text-sky-800"
+                  href="/"
+                  className="w-fit ml-auto mr-5 text-center relative px-1.5 py-1 text-sm text-sky-800"
                 >
                   <span className="absolute inset-0 border border-dashed border-sky-300/60 bg-sky-400/10"></span>
-                  Visit
+                  Coming soon
                   <svg
                     width={5}
                     height={5}
@@ -330,8 +391,10 @@ export default function Homepage() {
             </div>
 
             <p className="text-zinc-600 text-sm">
-              A course platform demo where students/users can sign up and watch
-              lessons, ask questions, and reply to others questions.
+              In this game, players explore a deserted town, uncovering its
+              eerie past and the mysteries behind its sudden abandonment. The
+              gameplay combines puzzle-solving, exploration, and narrative
+              elements and something else.
             </p>
             <ul className="flex flex-wrap gap-x-5 gap-y-1">
               <li className={"text-xs w-fit  flex gap-1 items-center"}>
@@ -450,12 +513,11 @@ export default function Homepage() {
               </li>
             </ul>
             <Link
-              href="https://github.com/ibraheemhursheesh/course-patform"
+              href="/"
               className="text-sm bg-zinc-800 text-white py-1.5 w-[10rem] ml-auto mr-5 text-center rounded-full "
             >
-              Source code
+              Learn more
             </Link>
-            {/* <div className="h-8"></div> */}
           </div>
         </div>
       </div>{" "}
