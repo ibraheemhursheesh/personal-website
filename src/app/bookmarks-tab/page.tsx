@@ -347,6 +347,32 @@ export default function page() {
             , and guess what? it doesn&apos;t always get to fully behave like a
             true dialog.
           </Paragraph>
+          <Paragraph>
+            Here's something that JavaScript dialogs can't do, the html dialog
+            element can be closed using swipe gestures and back button on mobile
+            devices. I had an aha moment when I first learned about this, this
+            addition makes web dialogs more standardized and in line with native
+            mobile apps, unifying the user experience across different
+            platforms.
+          </Paragraph>
+
+          <Paragraph>
+            Imagine you open a dialog on your mobile browser, then you pressed
+            the back button, what do you expect to happen? Do you expect the
+            dialog to close or the page to navigate back to the previous URL?
+          </Paragraph>
+          <Paragraph>
+            I would personally wait for a dialog close because that's the
+            experience I get everywhere else on my mobile device, for example,
+            if I try to delete a message on WhatsApp or Telegram, I'll get a
+            confirmation dialog that can be closed with a back move.
+          </Paragraph>
+          <Paragraph>
+            However, if you're on the wide, messy web, you can't tell what's
+            going to happen when you move back unless you actually try to. It
+            depends on whether the website uses the native element or implements
+            its custom dialog solution.
+          </Paragraph>
           <HeadingTwo>Extension Current State</HeadingTwo>
           <Paragraph>
             Bookmarks Tab is currently in its early stage, I&apos;ve tried to
