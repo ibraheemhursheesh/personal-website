@@ -659,8 +659,8 @@ export default function Homepage() {
       </div>
       <footer className="bg-white border-t border-[#e9e9e9]">
         <p className="max-w-xl mx-auto text-zinc-600 p-10 text-center">
-          Designed with code, coded in Visual Studio Code. Built with Next.js
-          and Tailwindcss. All text is Geist.
+          Coded in Visual Studio Code. Built with Next.js and Tailwindcss. Text
+          is Geist and Google Sans Code.
         </p>
       </footer>
     </main>
