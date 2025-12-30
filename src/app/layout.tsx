@@ -5,6 +5,11 @@ import "./globals.css";
 import HomePageLanding from "@/components/HomePageLanding";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Ibrahim Harchiche",
+  description: "the personal website of ibrahim harchiche",
+};
+
 export default function RootLayout({
   children,
 }: {
