@@ -128,9 +128,9 @@ export default function page() {
             mobile devices is the small touchable screen.
           </Paragraph>
 
-          <img
+          <Image
             className="rounded-lg border-2 w-full border-zinc-500 max-w-[500px] mt-5"
-            src="/mobile-gestures.jpg"
+            src="/mobilegestures.jpg"
             width="1273"
             height="773"
             alt="mobile gestures"
