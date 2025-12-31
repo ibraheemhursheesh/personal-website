@@ -5,6 +5,7 @@ import { ArrowRight, Lightbulb } from "lucide-react";
 import Image from "next/image";
 
 import { Google_Sans_Code } from "next/font/google";
+import HomePageLanding from "@/components/HomePageLanding";
 
 const spaceMono = Google_Sans_Code({
   subsets: ["latin"],
@@ -20,8 +21,7 @@ export default function page() {
     "Easily edit, move, or delete your bookmarks.",
   ];
   return (
-    <div>
-      {" "}
+    <div className="relative">
       {/* <div className="bg-red-50 text-center p-5">
         this page is still under developemnt, but the content is almost done
         written, so you can go ahead and read.
@@ -69,7 +69,7 @@ export default function page() {
         /> */}
           <video
             className="rounded-md mt-5 w-full aspect-[660/428]"
-            src="/intro.webm"
+            src="https://stream.mux.com/MfFyMylqLpMHCS01EQ8Q6iOgL7sM2C28DSyNqZgwPFRk.m3u8"
             controls={true}
           />
 
@@ -114,7 +114,7 @@ export default function page() {
           </Paragraph>
           <video
             className="rounded-md mt-5 w-full aspect-[660/428]"
-            src="/folder-navigation.mp4"
+            src="https://stream.mux.com/UZekM2ao12VV2N7Eac14NIiJjHdITVUsZbn88O802yxg.m3u8"
             controls={true}
           />
           <Paragraph>
@@ -199,7 +199,7 @@ export default function page() {
           <HeadingTwo>Drop and Drop</HeadingTwo>
           <video
             className="rounded-md mt-5 w-full aspect-[660/428]"
-            src="/drag-and-drop.mp4"
+            src="https://stream.mux.com/02YiMjl5CFy8RxEXehQtIiGpH8RPOHIwmvOsMP3m6oN8.m3u8"
             controls={true}
           />
           <Paragraph>
@@ -219,7 +219,7 @@ export default function page() {
           </Paragraph>
           <video
             className="rounded-md mt-5 w-full aspect-[660/428]"
-            src="/scrollable-container.mp4"
+            src="https://stream.mux.com/8dsykB6w1x9KKorsZOZomWGEqZfapqR02DzBoesyxTFE.m3u8"
             controls={true}
           />
           <Paragraph>
@@ -232,7 +232,7 @@ export default function page() {
             really guarantee that some silly weird bug isn&apos;t hiding behind
             an edge case I didn&apos;t consider.
           </Paragraph>
-          <div className="bg-yellow-400/40 py-3 px-5 2 sm:px-5t-5 rounded-sm flex items-start gap-2 sm:gap-5">
+          <div className="bg-yellow-400/40 py-3 px-5 2 sm:px-5t-5 rounded-sm flex items-start gap-2 sm:gap-5 mt-5">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
             <p className="text-sm sm:text-base">
               After around two months of daily usages, I came across two bugs
@@ -279,7 +279,7 @@ export default function page() {
           <HeadingTwo>The Dialog Element</HeadingTwo>
           <video
             className="rounded-md mt-5 w-full aspect-[660/428]"
-            src="/dialogs.mp4"
+            src="https://stream.mux.com/kivfosfwORdmBPMQw008tE6PDmtqLmFPhAGX96tz6Sk8.m3u8"
             controls={true}
           />
           <Paragraph>
