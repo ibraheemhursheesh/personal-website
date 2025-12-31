@@ -27,7 +27,9 @@ export default function page() {
         written, so you can go ahead and read.
       </div> */}
       <div
-        className={spaceMono.className + " font-normal max-w-3xl mx-auto px-10"}
+        className={
+          spaceMono.className + " font-normal max-w-3xl mx-auto px-6 sm:px-10"
+        }
       >
         <header className="text-center">
           <h1 className="text-4xl font-bold mt-10">Bookmarks Tab</h1>
@@ -80,21 +82,24 @@ export default function page() {
           </Paragraph>
           <ul className="ml-2 sm:ml-4 mt-5">
             {featuresList.map((feature) => (
-              <li className="mt-1 flex gap-2 items-start" key={feature}>
+              <li
+                className="mt-1 flex gap-2 items-start text-sm sm:text-base"
+                key={feature}
+              >
                 <ArrowRight size={20} className="h-lh shrink-0" />
                 {feature}
               </li>
             ))}
           </ul>
 
-          <div className="bg-blue-200/40 py-3 px-5 mt-5 rounded-sm flex items-start gap-4">
+          <div className="bg-blue-200/40 py-3 px-2 sm:px-5 mt-5 rounded-sm flex items-start gap-2 sm:gap-5 ">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
             <p className="text-sm sm:text-base">
-              This article aims to provide details on the extension
-              implementation process, the kind of details that a screenshot and
-              paragraph cannot usually summerize, whether you&apos;re an
-              early-career or seasoned developer, I believe that you&apos;ll
-              find something useful in this article.
+              This article aims to provide details on the extension development
+              process, the kind of details that a screenshot and paragraph
+              cannot usually summerize, whether you&apos;re an early-career or
+              seasoned developer, I believe that you&apos;ll find something
+              useful in this article.
             </p>
           </div>
           <HeadingTwo>Role and Purposes</HeadingTwo>
@@ -227,7 +232,7 @@ export default function page() {
             really guarantee that some silly weird bug isn&apos;t hiding behind
             an edge case I didn&apos;t consider.
           </Paragraph>
-          <div className="bg-yellow-400/40 py-3 px-5 mt-5 rounded-sm flex items-start gap-4">
+          <div className="bg-yellow-400/40 py-3 px-5 2 sm:px-5t-5 rounded-sm flex items-start gap-2 sm:gap-5">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
             <p className="text-sm sm:text-base">
               After around two months of daily usages, I came across two bugs
@@ -290,7 +295,7 @@ export default function page() {
             </code>{" "}
             element instead, I learned about this element just recently and
             wanted to experiment with it, and you trust me,you really want to
-            give a try.
+            give it a try.
           </Paragraph>
           <Paragraph>
             The{" "}
@@ -307,7 +312,7 @@ export default function page() {
               className="underline underline-offset-2"
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#browser_compatibility"
             >
-              its baseline state
+              its baseline state on MDN
             </a>{" "}
             says that it&apos;s widely available across major browsers.
           </Paragraph>
