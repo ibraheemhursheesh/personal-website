@@ -31,11 +31,11 @@ export default function page() {
       >
         <header className="text-center">
           <h1 className="text-4xl font-bold mt-10">Bookmarks Tab</h1>
-          <p className=" mt-2">
+          <p className="text-zinc-600 mt-2">
             A chrome extension that takes your bookmarks and displays them in a
             clean, cosy interface on your browser new tab.
           </p>
-          <p className="mt-2">On October 9th, 2025.</p>
+          <p className="mt-2">On October 9th, 2025</p>
         </header>
         <main className="">
           {/* <div className="flex gap-3 "> */}
@@ -78,7 +78,7 @@ export default function page() {
             facilitates access and navigation to your bookmarks, providing you
             with a better browsing experience. Its core features are:
           </Paragraph>
-          <ul className="ml-4 mt-5">
+          <ul className="ml-2 sm:ml-4 mt-5">
             {featuresList.map((feature) => (
               <li className="mt-1 flex gap-2 items-start" key={feature}>
                 <ArrowRight size={20} className="h-lh shrink-0" />
@@ -89,7 +89,7 @@ export default function page() {
 
           <div className="bg-blue-200/40 py-3 px-5 mt-5 rounded-sm flex items-start gap-4">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
-            <p>
+            <p className="text-sm sm:text-base">
               This article aims to provide details on the extension
               implementation process, the kind of details that a screenshot and
               paragraph cannot usually summerize, whether you&apos;re an
@@ -229,7 +229,7 @@ export default function page() {
           </Paragraph>
           <div className="bg-yellow-400/40 py-3 px-5 mt-5 rounded-sm flex items-start gap-4">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
-            <p>
+            <p className="text-sm sm:text-base">
               After around two months of daily usages, I came across two bugs
               regarding the functionality, the first one is a breeze to fix,
               it&apos;s related to{" "}
