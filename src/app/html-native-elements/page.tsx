@@ -390,7 +390,7 @@ export default function Page() {
                   Click the three dots, Shadcn <CodeLine>DropdownMenu</CodeLine>{" "}
                   will show up below this dialog, because the dialog lives in
                   Top Layer while the <CodeLine>DropdownMenu</CodeLine> lives in
-                  "the normal layer"
+                  &quot;the normal layer&quot;
                 </p>
               </div>
             </dialog>
