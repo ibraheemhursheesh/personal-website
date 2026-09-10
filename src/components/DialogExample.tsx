@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import { useRef } from "react";
@@ -27,7 +26,7 @@ export default function DialogExample() {
       {/* Native <dialog> styled to match shadcn's dialog content. */}
       <dialog
         ref={dialogRef}
-        closedBy="any"
+        closedby="any"
         className="m-auto w-full max-w-[calc(100%-2rem)] gap-4 rounded-xl border-0 bg-popover p-4 text-sm text-popover-foreground ring-1 ring-foreground/10 outline-none open:grid backdrop:bg-black/10 backdrop:backdrop-blur-xs sm:max-w-sm"
       >
         <textarea className="border-3" />

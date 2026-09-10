@@ -6,6 +6,7 @@ import HomePageLanding from "@/components/HomePageLanding";
 import Link from "next/link";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import "@/app/globals.css";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 

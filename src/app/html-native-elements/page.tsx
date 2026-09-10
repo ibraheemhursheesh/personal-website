@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 import HeadingThee from "@/components/HeadingThee";
 import HeadingTwo from "@/components/HeadingTwo";
@@ -365,7 +364,7 @@ export default function Page() {
               Open dialog
             </Button>
             <dialog
-              closedBy="any"
+              closedby="any"
               ref={dialogRef}
               className="max-w-md mx-5 my-auto md:mx-auto rounded-md"
             >
