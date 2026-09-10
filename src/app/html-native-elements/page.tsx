@@ -51,7 +51,7 @@ export default function Page() {
   const featuresList = [
     "Keyboard-navigatable: if it's a dialog, it should be focus trapped, it's a select, it should navigate using arrow keys, etc.",
     "Escape key dismissal",
-    "These floating element/pop ups shoud, under all circumstances, appear above the rest of the page content, and as we will see, there are different machinisims to approach this.",
+    "These floating element/pop ups should, under all circumstances, appear above the rest of the page content, and as we will see, there are different mechanisms to approach this.",
     "Mobile back button/swipe gesture: you probably didn't think about it, but on desktop, you use Escape key to close, but what do you do on mobile? If you're like me on Android, you can close things using the back button or swipe gesture, our dialog/select should support that too, otherwise, it's gonna jump the browser back in history, which creates a bad user experience, especially if we're building something that will be heavily used by mobile users, like a social media app or something, I've tested this on multiple social media apps like Facebook and Twitter (not going to call it X whatsoever), they all, either fully or partially, support back button press in some form. For example, on Facebook, I tried every possible menu or dialog I could think of, and they all close when I hit back button (and it's awesome).",
   ];
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -85,15 +85,15 @@ export default function Page() {
           <Paragraph>
             We've all probably heard about the HTML dialog element, popover API,
             and customizable select, but I think a lot of people don't realize
-            how powerfull and battle-tested they are and also might not know
-            about some of the inconsistences these elements have and that they
-            might encouter when using them. And this is what this post is about,
-            I'm not going to go over the syntax and basic API's, if you're
-            unfimiliar with them, I would suggest you read some MDN pages Chrome
-            For Devs blog posts before you jump into this article. I would like
-            to focus more in-depth details and edge cases. The articel will be a
-            compartion between these native element and UI libraries like
-            Shadcn, React Aria, etc.
+            how powerful and battle-tested they are and also might not know
+            about some of the inconsistencies these elements have and that they
+            might encounter when using them. And this is what this post is
+            about, I'm not going to go over the syntax and basic API's, if
+            you're unfamiliar with them, I would suggest you read some MDN pages
+            and Chrome For Devs blog posts before you jump into this article. I
+            would like to focus more on in-depth details and edge cases. The
+            article will be a comparison between these native elements and UI
+            libraries like Shadcn, React Aria, etc.
           </Paragraph>
           {/* <CallOut>
             I'm not going to go over the syntax and API's for these elements, if
@@ -102,7 +102,7 @@ export default function Page() {
           </CallOut> */}
           <Paragraph>
             Let's start by listing out some of the common features you would
-            expect from a robust dialog, select, or popover, wether it's native
+            expect from a robust dialog, select, or popover, whether it's native
             or custom JS one.
           </Paragraph>
           <ul className="list-disc mt-4 pl-6 sm:pl-10">
@@ -121,7 +121,7 @@ export default function Page() {
           </ul> */}
           <Paragraph>
             I don't know if I missed something, but let's just focus on these
-            four featuers for now and see how native elements vs UI libraries
+            four features for now and see how native elements vs UI libraries
             approach them, as we'll see, there's a lot to unpack in here.
           </Paragraph>
           <Paragraph>
@@ -137,7 +137,7 @@ export default function Page() {
             For back button/swipe gesture, this is also already built-in in the
             native components, all of them close on back button press on
             Android, but in UI libraries like Radix UI or React Aria, they don't
-            even have this feature at all, despite that it's can be added using
+            even have this feature at all, despite that it can be added using
             JavaScript.
           </Paragraph>
           <Paragraph>
@@ -148,12 +148,12 @@ export default function Page() {
             built-in component.
           </Paragraph>
           <Paragraph>
-            The broswer compatibility for the <CodeLine>CloseWatcher</CodeLine>{" "}
+            The browser compatibility for the <CodeLine>CloseWatcher</CodeLine>{" "}
             API is decent, it's been in Chrome and Edge since June 2024, Firefox
-            add it in May this year (2026), it's not avaibable in Safari yet,
-            but this is progressive enhacement feature, if it's avaible, your
-            users are going to enjoy a better experience, if it's not, it's not
-            a big deal. Also, you can build this same behavior using the{" "}
+            added it in May this year (2026), it's not available in Safari yet,
+            but this is a progressive enhancement feature, if it's available,
+            your users are going to enjoy a better experience, if it's not, it's
+            not a big deal. Also, you can build this same behavior using the{" "}
             <CodeLine>History</CodeLine>
             API if you need it that much.
           </Paragraph>
@@ -162,10 +162,10 @@ export default function Page() {
             One thing I want to compare is how native elements and UI libraries
             make sure things appear on top of other page content and also above
             each other. To better explain this, let's take the following example
-            from Notion webapp, here we have the settings dialog and inside we a
-            select that we can choose our prefered theme from. The question is
-            how do we ensure the dialog appears above other content and the
-            select appear above the dialog.
+            from Notion webapp, here we have the settings dialog and inside we
+            have a select that we can choose our preferred theme from. The
+            question is how do we ensure the dialog appears above other content
+            and the select appears above the dialog.
           </Paragraph>
           <Image
             src="/notion-setting-dialog.png"
@@ -176,20 +176,21 @@ export default function Page() {
           />
           <Paragraph>
             For our native elements, the answer is the Top Layer, each of our
-            dialog and select will live in Top Layer, a saperate layer that the
+            dialog and select will live in Top Layer, a separate layer that the
             browser maintains internally, it allows our elements to appear on
             top of all other stuff in the DOM, and it bypasses any stacking
             context that could be locking it and beats any{" "}
             <CodeLine>z-index</CodeLine> value, even your favorite 9999, if more
-            than one element exist in the Top Layer, they're going to be stacked
-            on top of each other according to the order they were opened in.
+            than one element exists in the Top Layer, they're going to be
+            stacked on top of each other according to the order they were opened
+            in.
           </Paragraph>
           <DialogExample />
           <Paragraph>
             The example above is using the <CodeLine>dialog</CodeLine> and{" "}
             <CodeLine>select</CodeLine> elements, if you're using Chrome, keep
-            both of them open, then use the devtools to to see the Top Layer at
-            the bottom of HTML documents.
+            both of them open, then use the devtools to see the Top Layer at the
+            bottom of HTML documents.
           </Paragraph>
           <Image
             src="/toplayer.png"
@@ -199,16 +200,16 @@ export default function Page() {
             className="rounded-md mt-5 w-full max-w-lg mx-auto"
           />
           <Paragraph>
-            The fact that stuff like dialog and popover lives in Top Layer have
-            an improtant implication; it doesn't matter where you put them in
+            The fact that stuff like dialog and popover lives in Top Layer has
+            an important implication; it doesn't matter where you put them in
             your HTML markup. Even if your element is nested deep in the DOM or
-            inside an element that have a <CodeLine>z-index</CodeLine> of 2,{" "}
+            inside an element that has a <CodeLine>z-index</CodeLine> of 2,{" "}
             <CodeLine>opacity</CodeLine> of 0.5, or any other css property that
             creates a stacking context. the dialog will still show up above all
             other content.
           </Paragraph>
           <HeadingTwo>
-            What about JS libraries? how does they handle this?
+            What about JS libraries? How do they handle this?
           </HeadingTwo>
           <Paragraph>
             You might think that the answer is managing stacking context, but
@@ -218,21 +219,21 @@ export default function Page() {
             <CodeLine>opacity</CodeLine> can lock an element behind a certain
             stacking context level (good luck debugging that), that's why native
             elements use Top Layer and don't let you manage stacking context
-            manually in the first place. The the front end developer community
-            have learned this and moved toward a better approach, and it's what
-            all UI libraries use (portals).
+            manually in the first place. The front end developer community has
+            learned this and moved toward a better approach, and it's what all
+            UI libraries use (portals).
           </Paragraph>
           <Paragraph>
             The way portals work is pretty simple, instead of putting the
-            floating element next to its trigger in the DOM, i.e a dialog next
-            to a button that opens it, and start fuzzing with{" "}
+            floating element next to its trigger in the DOM, i.e., a dialog next
+            to a button that opens it, and start fussing with{" "}
             <CodeLine>z-index</CodeLine>. Let's just put the element at the end
             of the body element and use JavaScript to position according to its
             anchor (if needed). This way, none of its parents is gonna have a
             stacking context locking it.
           </Paragraph>
           <Paragraph>
-            if we have more than one element that need to appear above other
+            if we have more than one element that needs to appear above other
             content, we're going to stack them, add the dialog first, then add
             the select.
           </Paragraph>
@@ -270,9 +271,9 @@ export default function Page() {
           <Paragraph>
             This second example is using Shadcn/React Aria dialog and select
             components, it's quite hard to see them in the devtools because
-            there's a lot of DOM nodes and wrappers that library is adding for
-            things like overlays and accessibility, but if you inspect, you'll
-            see something like this:
+            there's a lot of DOM nodes and wrappers that the library is adding
+            for things like overlays and accessibility, but if you inspect,
+            you'll see something like this:
           </Paragraph>
           <Image
             src="/shadcn-dialog-select.png"
@@ -284,7 +285,7 @@ export default function Page() {
           <Paragraph>
             There are a lot of details in here, but what we care about is the
             structure and order; how the elements are appended to the end of the
-            the <CodeLine>body</CodeLine> element and how the dialog comes first
+            <CodeLine>body</CodeLine> element and how the dialog comes first
             (first arrow) then the select (second arrow).
           </Paragraph>
           <Paragraph>
@@ -295,8 +296,8 @@ export default function Page() {
             unlikely to be affected by CSS properties like{" "}
             <CodeLine>z-index</CodeLine>. The difference is how it's done, Top
             Layer requires no JavaScript to work, the stack of opened elements
-            is maintained internally by the broswer, while Portals use
-            JavaScript to keep track of all opened elements, wether they're
+            is maintained internally by the browser, while Portals use
+            JavaScript to keep track of all opened elements, whether they're
             dialogs, menus, whatever, and close them in order.
           </Paragraph>
           <Paragraph>
@@ -305,34 +306,34 @@ export default function Page() {
             visibility (display in order), but also to make sure they close in
             order; in the two demos above, if you hit Escape key or click
             outside (light dismiss), the select will close first, then you have
-            to hit Escape or click oustide one more time for the dialog to close
+            to hit Escape or click outside one more time for the dialog to close
             second.
           </Paragraph>
           <Paragraph>
-            Closing on back button in order? as I mentioned, it only works with
+            Closing on back button in order? As I mentioned, it only works with
             native elements, libraries can actually provide this functionality
             with <CodeLine>CloseWatcher</CodeLine>'s or{" "}
             <CodeLine>History</CodeLine> API, but for some reason they don't!
           </Paragraph>
           <HeadingTwo>
-            The Inconsistences with Combining Top Layer and Portals
+            The Inconsistencies with Combining Top Layer and Portals
           </HeadingTwo>
           <Paragraph>
             After we discussed how Top Layer and Portals work, the last thing I
             want to draw your attention to is what happens when you combine both
             of them, because you're very likely to do so if you decided to use
-            navite elements.
+            native elements.
           </Paragraph>
           <Paragraph>
             As we've seen, there are three types of elements that can live in
             Top Layer as of now, dialog, popovers, and customizable select, if
             you happen to need something beyond that, say a menu, you would like
-            to reach for your favirote UI library, and that's where things get
-            intresting and also inconsistant.
+            to reach for your favorite UI library, and that's where things get
+            interesting and also inconsistent.
           </Paragraph>
           <CallOut>
             There are some proposals on adding more native elements like menus,
-            datepickers, comboxes, etc, and they'll surely be added, but you
+            datepickers, comboboxes, etc, and they'll surely be added, but you
             don't expect them to come around soon.
           </CallOut>
           <Paragraph>
@@ -392,7 +393,7 @@ export default function Page() {
           </div>
           <CodeSnippet
             // filename="DialogWithMenu.tsx"
-            code={`// altough in the code the DropDownMenu is nested inside the dialog, the library will use React portals to mount it at the end of the body element.
+            code={`// although in the code the DropDownMenu is nested inside the dialog, the library will use React portals to mount it at the end of the body element.
 <dialog>
   <DropdownMenu>
     <DropdownMenuContent>
@@ -404,10 +405,10 @@ export default function Page() {
 </dialog>`}
           />
           <Paragraph>
-            This problem doesn't have a straightforward fix. because we can't
+            This problem doesn't have a straightforward fix, because we can't
             force our Shadcn menu to go into Top Layer. The Top Layer is managed
-            internally by the browser. This leaves us with two choice to get our
-            menu to appear above the dialog.
+            internally by the browser. This leaves us with two choices to get
+            our menu to appear above the dialog.
           </Paragraph>
           <Paragraph>
             The first option we have is to rely on stacking context: instead of
@@ -420,7 +421,7 @@ export default function Page() {
             Says MDN.
           </CallOut>
           <Paragraph>
-            most UI libraries provide a way, e.g a{" "}
+            most UI libraries provide a way, e.g., a{" "}
             <CodeLine>container</CodeLine> property, to choose where your portal
             elements are mounted.
           </Paragraph>
@@ -431,17 +432,18 @@ export default function Page() {
           </Paragraph>
           <Paragraph>
             not yet having enough elements that live in Top Layer shouldn't
-            prevent us from using from these elements at all, if your dialog
-            don't have something like a menu or datepicker inside of it, e.g
-            just a standalone dialog, you can still use the dialog element
-            without worrying about managing stacking context or things showing
-            below each other.
+            prevent us from using these elements at all, if your dialog doesn't
+            have something like a menu or datepicker inside of it, e.g just a
+            standalone dialog, you can still use the dialog element without
+            worrying about managing stacking context or things showing below
+            each other.
           </Paragraph>
-          <HeadingTwo>Is Anyone Using These Stuff?</HeadingTwo>
+          <HeadingTwo>Is Anyone Using This Stuff?</HeadingTwo>
           <Paragraph>
-            Yes, LinkedIn using dialog and popover in many places across their
-            site, MDN is using the dialog element for their seach box, I’m using
-            them for a Chrome Extension with nine users, and you should too.
+            Yes, LinkedIn uses dialog and popover in many places across their
+            site, MDN is using the dialog element for their search box, I’m
+            using them for a Chrome Extension with nine users, and you should
+            too.
           </Paragraph>
         </main>
       </div>
