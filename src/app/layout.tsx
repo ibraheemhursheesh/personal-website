@@ -11,6 +11,7 @@ import "@/app/globals.css";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata = {
+  metadataBase: new URL("https://ibrahim-harchiche.vercel.app"),
   title: "Ibrahim Harchiche",
   description: "the personal website of ibrahim harchiche",
 };
