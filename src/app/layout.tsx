@@ -1,6 +1,6 @@
 import { GeistSans } from "geist/font/sans";
 
-import "./globals.css";
+// import "/globals.css";
 
 import HomePageLanding from "@/components/HomePageLanding";
 import Link from "next/link";

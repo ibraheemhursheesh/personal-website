@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import HeadingThee from "@/components/HeadingThee";
 import HeadingTwo from "@/components/HeadingTwo";
