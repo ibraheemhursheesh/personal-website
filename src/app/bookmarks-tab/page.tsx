@@ -1,15 +1,22 @@
 import HeadingThee from "@/components/HeadingThee";
 import HeadingTwo from "@/components/HeadingTwo";
 import Paragraph from "@/components/Paragraph";
+import CallOut from "@/components/CallOut";
+
 import { ArrowRight, Lightbulb } from "lucide-react";
 import Image from "next/image";
 
 import { Google_Sans_Code } from "next/font/google";
+import { Gentium_Book_Plus } from "next/font/google";
 import HomePageLanding from "@/components/HomePageLanding";
 
 const spaceMono = Google_Sans_Code({
   subsets: ["latin"],
   // weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400", "700"],
+});
+const gentiumBookPlus = Gentium_Book_Plus({
+  subsets: ["latin"],
   weight: ["400", "700"],
 });
 
@@ -28,7 +35,8 @@ export default function page() {
       </div> */}
       <div
         className={
-          spaceMono.className + " font-normal max-w-3xl mx-auto px-6 sm:px-10"
+          gentiumBookPlus.className +
+          " font-normal max-w-3xl mx-auto px-6 sm:px-10"
         }
       >
         <header className="text-center">
@@ -83,7 +91,7 @@ export default function page() {
           <ul className="ml-2 sm:ml-4 mt-5">
             {featuresList.map((feature) => (
               <li
-                className="mt-1 flex gap-2 items-start text-sm sm:text-base"
+                className="mt-1 flex gap-2 items-start text-base sm:text-[1.1rem]"
                 key={feature}
               >
                 <ArrowRight size={20} className="h-lh shrink-0" />
@@ -94,7 +102,7 @@ export default function page() {
 
           <div className="bg-blue-200/40 py-3 px-2 sm:px-5 mt-5 rounded-sm flex items-start gap-2 sm:gap-5 ">
             <Lightbulb size={20} className="shrink-0 min-h-lh" />
-            <p className="text-sm sm:text-base">
+            <p className="text-base sm:text-[1.1rem]">
               This article aims to provide details on the extension development
               process, the kind of details that a screenshot and paragraph
               cannot usually summerize, whether you&apos;re an early-career or
@@ -232,9 +240,8 @@ export default function page() {
             really guarantee that some silly weird bug isn&apos;t hiding behind
             an edge case I didn&apos;t consider.
           </Paragraph>
-          <div className="bg-yellow-400/40 py-3 px-5 2 sm:px-5t-5 rounded-sm flex items-start gap-2 sm:gap-5 mt-5">
-            <Lightbulb size={20} className="shrink-0 min-h-lh" />
-            <p className="text-sm sm:text-base">
+          <CallOut>
+            <p className="text-base sm:text-[1.1rem]">
               After around two months of daily usages, I came across two bugs
               regarding the functionality, the first one is a breeze to fix,
               it&apos;s related to{" "}
@@ -248,7 +255,7 @@ export default function page() {
               the second one is something I haven&apos;t figured out its cause
               yet, I&apos;ll give this a deeper inspection when I&apos;m free.
             </p>
-          </div>
+          </CallOut>
           <Paragraph>
             Believe it or not, I didn&apos;t use a library for this, I
             hand-crafted the feature, the library that would best suit this

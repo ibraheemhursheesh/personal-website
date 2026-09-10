@@ -4,6 +4,10 @@ import "./globals.css";
 
 import HomePageLanding from "@/components/HomePageLanding";
 import Link from "next/link";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata = {
   title: "Ibrahim Harchiche",
@@ -16,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={GeistSans.className + " overflow-x-hidden relative "}>
         {/* <div className="relative bg-white p-2  text-center text-sm text-black">
           <p className="max-w-xl mx-auto">
